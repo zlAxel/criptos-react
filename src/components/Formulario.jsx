@@ -66,7 +66,7 @@ export const Formulario = ({ setDatos, setCotizacion }) => {
         // ? Validamos que los campos no estén vacíos
         if( [ moneda, cripto ].includes('') ){
             setError('Todos los campos son obligatorios')
-            setCotizacion({})
+            setCotizacion({}) // * Reiniciamos la cotización
             return
         }
 
